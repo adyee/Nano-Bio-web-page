@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------------Estilos de menu----------------------------*/
 .nav {
-    position: absolute;
+    overflow: hidden;
+    position: fixed;
     top: 50px;
     left: -100%; 
     width: 100%;
@@ -67,10 +68,23 @@ h1, h2, h3, h4, h5, h6 {
     /*esto viene siendo lo que es inicio, cursos, docentes, contacto*/
 }
 
+.header {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: #313131;
+    color: black;
+}
+
+
 .menu {
+    overflow: hidden;
+    position: fixed;
+    top: -10px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: 190px;
 }
 
 .menu__link {
@@ -93,9 +107,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.contenedor {
+.contenedor_menu {
 	margin: auto;
-	width: 90%;
+	width: 80%;
 }
 
 
@@ -109,7 +123,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 }
 
-.banner .contenedor {
+.banner__image {
+     background: no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.banner .contenedor_banner {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -126,20 +147,44 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------------------Estilos de info------------------------------*/
 
+.info_back {
+    background: #6C3483;
+	color: #fff;
+    width: auto;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+	margin-bottom: 120px;
+}
 
 .info__columna {
 	background: #6C3483;
 	color: #fff;
+    align-items: center;
 	padding: 15px;
-	margin-bottom: 40px;	
+	margin: auto;
 }
 
 
 /*------------------------------Estilos de cursos------------------------------*/
 
+.cursos_back {
+    background: #6C3483;
+	color: #fff;
+    width: auto;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+	margin-top: 500px;
+    z-index: -1000;
+}
+
 .cursos__columna {
 	position: relative;
 	margin-bottom: 30px;
+    
 }
 
 .cursos__descripcion {
@@ -152,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	padding: 5px;
 	font-size: 12px;
+    
 }
 
 .cursos__titulo {
@@ -162,8 +208,33 @@ h1, h2, h3, h4, h5, h6 {
 .cursos__img {
 	width: 100%;
 }
+/*------------------Titulo Video Prueba -------------------------------------*/
+.video_titulo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-270%);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+    z-index: -1000;
+	
+}
 
+.video_titulo .section__titulo {
+	font-size: 90px;
+	
+}
 
+/*------------------PARALLAX PRUEBA CON CSS -------------------------------------*/
+
+.parallax_prueba{
+    background: url('img/brain.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    
+
+}
 /*------------------------------Estilos de footer------------------------------*/
 
 
@@ -270,7 +341,7 @@ en donde se encuentran las imagenes*/
 @media(min-width:1024px) {
 	
 	.contenedor{
-		width: 1000px;
+		width: auto;
 	}
 	
 	.section__titulo{
@@ -345,7 +416,7 @@ en donde se encuentran las imagenes*/
 
 @media(min-width:1280px) {
 	.contenedor {
-		width: 1200px;
+		width: auto;
 	}
 	
 	.logo {
