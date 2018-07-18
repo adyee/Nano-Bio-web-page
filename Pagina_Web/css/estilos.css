@@ -27,6 +27,22 @@ h1, h2, h3, h4, h5, h6 {
 	color: #6D0A6F;
 }
 
+/*--------------------------body background--------------------------*/
+
+.body_backg {
+    background: -webkit-linear-gradient(#000, #993399); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(#000, #993399); /* Opera 11.1+ */
+    background: -moz-linear-gradient(#000, #993399); /* Firefox 3.6+ */
+    background: linear-gradient(#000, #993399); /* Standard syntax (must be last) */
+    background-color: #000; /* It's a good idea to set a background color in case the gradient doesn't load */
+    
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: -webkit-background-size: cover;
+    background: -moz-background-size: cover;
+    background: -o-background-size: cover;
+}
 
 /*--------------------------estilos del header--------------------------*/
 
@@ -117,17 +133,31 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .banner {
-	margin-top: -60px;
+    background-image:url('../img/pup1.jpg');
+    height: 970px;
+    width: 100%;
 	position: relative;
 	z-index: -1000;
-	margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.banner__image {
-     background: no-repeat center;
+.banner_video {
+    background-image:url('../img/pup2.jpg');
+    height: 485px;
+    width: 100%;
+	position: relative;
+	z-index: -1000;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    
+    display: -webkit-box;
+-webkit-box-align: center;
+-webkit-box-pack: center;
+-webkit-box-orient: horizontal;
+-webkit-box-flex: 1
+   
 }
 
 .banner .contenedor_banner {
@@ -141,91 +171,78 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
+.contenedor_banner2 {
+	font-size: 100px;
+		margin: 10px;
+	
+}
+
 .banner__txt {
 	display: none;
 }
 
-/*------------------------------Estilos de info------------------------------*/
+/*------------------SECCION DEL ABSTRACT-------------------------------------*/
 
-.info_back {
-    background: #6C3483;
-	color: #fff;
-    width: auto;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: inherit;
-	margin-bottom: 120px;
+.abstract {
+    height: 1500px;
+    width: 100%;
+    align-content:center;
 }
 
-.info__columna {
-	background: #6C3483;
-	color: #fff;
+
+.abstract__titulo{
+    font-size: 100px;
+		margin: 10px;
+    text-align: center;
+}
+
+.display{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.next-to-next{
+    float: left;
+    min-height: 450px;
     align-items: center;
-	padding: 15px;
 	margin: auto;
+    color: white;
 }
 
-
-/*------------------------------Estilos de cursos------------------------------*/
-
-.cursos_back {
-    background: #6C3483;
-	color: #fff;
-    width: auto;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: inherit;
-	margin-top: 500px;
-    z-index: -1000;
+#abstract_img {
+    width: 590px;
+    height: 660px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image:url('../img/doggo3.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.cursos__columna {
-	position: relative;
-	margin-bottom: 30px;
-    
+#abstract_desc {
+     width: 800px;
+    height: 660px;
+    text-align: center;
+    font-size: 1.8vw;
 }
 
-.cursos__descripcion {
-	position: absolute;
-	top: 0;
-	left: 0;
-	color: #fff;
-	background: rgba(0,0,0,0.5);
-	width: 60%;	
-	height: 100%;
-	padding: 5px;
-	font-size: 12px;
-    
+/*------------------SECCION DEL VIDEO-------------------------------------*/
+
+.video {
+    height: 770px;
+    width: 100%;
 }
 
-.cursos__titulo {
-	font-size: 20px;
-	margin: 5px 0;
+.contenedor_video{
+ display: -webkit-box;
+-webkit-box-align: center;
+-webkit-box-pack: center;
+-webkit-box-orient: horizontal;
+-webkit-box-flex: 1
 }
 
-.cursos__img {
-	width: 100%;
-}
-/*------------------Titulo Video Prueba -------------------------------------*/
-.video_titulo {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%) translateY(-270%);
-	width: 100%;
-	color: #fff;
-	text-align: center;
-    z-index: -1000;
-	
-}
-
-.video_titulo .section__titulo {
-	font-size: 90px;
-	
-}
-
-/*------------------PARALLAX PRUEBA CON CSS -------------------------------------*/
+/*------------------PARALLAX PRUEBA CON CSS (Aun no funcional) -------------------------------------*/
 
 .parallax_prueba{
     background: url('img/brain.jpg') no-repeat center;
@@ -243,20 +260,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	padding: 10px;
 	text-align: center;	
-}
-
-
-.footer .social [class^="icon-"] {
-	display: inline-block;
-	color: #fff;
-	text-decoration: none;
-	font-size: 30px;
-	padding: 10px;
-	background: white;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	line-height: 40px;
 }
 	
 
@@ -373,7 +376,7 @@ en donde se encuentran las imagenes*/
 	}
 	
 	.banner__titulo {
-		font-size: 70px;
+		font-size: 130px;
 		
 	}
 	

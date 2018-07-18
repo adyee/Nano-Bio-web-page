@@ -7,73 +7,63 @@
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/font.css">
     </head>
-    <body background="img/brain.jpg">
-        <header class="header"> 
+    <body id= "body" class="body_backg">
+        <header id = "menu" class="header"> 
             <div class="contenedor_menu">
                 <h1 class="logo">BIOMOD</h1> 
                 <span class="icon-menu" id="btn-menu"></span>
                 <nav class="nav" id="nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a class="menu__link select" href="">Inicio</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Enlace 1</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Enlace 2</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Enlace 3</a></li>
-                        <li class="menu__item"><a class="menu__link" href="">Enlace 4</a></li>
-                                                
+                    <ul class="menu"> 
+                        <li><a class="menu__link select" href="">HOME</a></li>
+                        <li><a class="menu__link" href="">PROJECT</a></li>
+                        <li><a class="menu__link" href="">EXPERIMENT</a></li>
+                        <li><a class="menu__link" href="">FUTURE</a></li>
+                        <li><a class="menu__link" href="">TEAM</a></li>                       
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="banner">
-        	<img src="img/banner.jpg" alt="" class="banner__img">
-        	<div class="contenedor_banner">
-        		<h2 class="banner__titulo">Nano Bio23 UANL</h2>
-        		<p class="banner__txt">Texto de prueba principal</p>
-        	</div>
-        </div>
-        <main class="main">
-        	<div class="contenedor">
-                <div class="info_back">
-        		<section class="info">
-        			<article class="info__columna">
-        				<img src="img/img1.gif" alt="" class="info__img">
-        				<h2 class="info__titulo">Titulo 1</h2>
-        				<p class="info__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, architecto explicabo vel necessitatibus officia ullam.</p>
-        			</article>
-        			
-        			<article class="info__columna">
-        				<img src="img/img1.gif" alt="" class="info__img">
-        				<h2 class="info__titulo">Titulo 3</h2>
-        				<p class="info__txt">Culpa nostrum perspiciatis ducimus, eligendi. Autem unde provident blanditiis rem voluptates quam, aliquid nobis cupiditate!</p>
-        			</article>
-        		</section>
+         <section id="home_banner" class="section1">
+            <div class="banner">
+        	   <div class="contenedor_banner">
+        		  <h2 id="titulo" class="banner__titulo">Nano Bio23 UANL</h2>
+        	   </div>
+            </div>
+         </section>
+        <section id="home_abstract" class="section2">
+            <div class="abstract">
+        	   <div class="contenedor_abstract">
+        		  <h2 class="abstract__titulo">ABSTRACT</h2>
+        	   </div>
+                <div class="display">
+                <article id="abstract_img" class ="next-to-next">
+                </article> 
+                <article id="abstract_desc" class ="next-to-next">
+                      <p>Como si se trata de un amigo preocupado, y a la vez del héroe más valiente, el perro estará pendiente de ti para cuidarte cuando estés enfermo, apoyarte en situaciones de dolor emocional y protegerte cuando de alguna u otra forma te encuentras ante cualquier tipo de peligro.
+
+                        La ventaja de tener a estas hermosas mascotas es que además de enternecerte con su belleza y travesuras, te serán fieles protectores que cuidarán de ti y de tu hogar, por lo que estarás contando con el mejor amigo que puedes tener, y el guardián más leal e incondicional.</p>
+                </article>
                     </div>
-                <div class="cursos_back">
-        		<section class="cursos">
-                    <div class="video_titulo">
-        			<h2 class="section__titulo">VIDEO</h2>
-                        </div>
-        			<div class="cursos__columna">
-        				<img src="img/img2.gif" alt="" class="cursos__img">
-        				<div class="cursos__descripcion">
-        					<h3 class="cursos__titulo">Texto de prueba</h3>
-        					<p class="cursos__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ducimus.</p>
-        				</div>
-        			</div>
-        			
-        		</section>
-              </div>
-        	</div>
-        </main>
+            </div>
+         </section>
+        <section id="home_banner2" class="section3">
+            <div class="banner_video">
+        	   <div class="contenedor_banner2">
+        		  <h2 class="banner__titulo">VIDEO</h2>
+        	   </div>
+            </div>
+         </section>
+        <section id="home_video" class="section4">
+            <div class="video">
+                <div class="contenedor_video">
+        	   <iframe width="700" height="500"
+                src="https://www.youtube.com/embed/40c_6fTb2OY">
+                </iframe>
+                </div>
+            </div>
+         </section>
         <footer class="footer">
-        	<div class="social">
-        		<a href="" class="icon-facebook"></a>
-        		<a href="" class="icon-twitter"></a>
-        		<a href="" class="icon-gplus"></a>
-        		<a href="" class="icon-vine"></a>
-        	</div>
         	<p class="copy">&copy; NanoBioUANL - Universidad Autonoma de Nuevo Leon 2018</p>	
         </footer>
-        <script src="js/menu.js"></script>
     </body>
 </html>
