@@ -6,9 +6,13 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/font.css">
+        
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/menu.js"></script>
+        
     </head>
     <body id= "body" class="body_backg">
-        <header id = "menu" class="header"> 
+        <header id = "home_menu" class="header"> 
             <div class="contenedor_menu">
                 <h1 class="logo">BIOMOD</h1> 
                 <span class="icon-menu" id="btn-menu"></span>
@@ -16,7 +20,13 @@
                     <ul class="menu"> 
                         <li><a class="menu__link select" href="">HOME</a></li>
                         <li><a class="menu__link" href="">PROJECT</a></li>
-                        <li><a class="menu__link" href="">EXPERIMENT</a></li>
+                        <li><a class="menu__link" href="">EXPERIMENT</a>
+                                <ul id="list">
+                                    <li><a id= "sub_ind" class="menu__link" href="#">OVERVIEW</a></li>
+                                    <li><a class="menu__link" href="#">COSA1</a></li>
+                                    <li><a class="menu__link" href="#">COSA2</a></li>
+                </ul>
+            </li>
                         <li><a class="menu__link" href="">FUTURE</a></li>
                         <li><a class="menu__link" href="">TEAM</a></li>                       
                     </ul>
@@ -36,9 +46,9 @@
         		  <h2 class="abstract__titulo">ABSTRACT</h2>
         	   </div>
                 <div class="display">
-                <article id="abstract_img" class ="next-to-next">
+                <article id="abstract_img">
                 </article> 
-                <article id="abstract_desc" class ="next-to-next">
+                <article id="abstract_desc">
                       <p>Como si se trata de un amigo preocupado, y a la vez del héroe más valiente, el perro estará pendiente de ti para cuidarte cuando estés enfermo, apoyarte en situaciones de dolor emocional y protegerte cuando de alguna u otra forma te encuentras ante cualquier tipo de peligro.
 
                         La ventaja de tener a estas hermosas mascotas es que además de enternecerte con su belleza y travesuras, te serán fieles protectores que cuidarán de ti y de tu hogar, por lo que estarás contando con el mejor amigo que puedes tener, y el guardián más leal e incondicional.</p>
@@ -65,5 +75,11 @@
         <footer class="footer">
         	<p class="copy">&copy; NanoBioUANL - Universidad Autonoma de Nuevo Leon 2018</p>	
         </footer>
+        
+        <script>
+        
+  
+        </script>
+        
     </body>
 </html>

@@ -20,11 +20,30 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1.5px;
 }
 
-/*--------------------estilos de los cursos tambien--------------------*/
-.section__titulo {
-	text-align: center;
-	font-size: 40px;
-	color: #6D0A6F;
+/*------------------SCROLLBAR---------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: -webkit-linear-gradient(#000, #737373); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(#000, #737373); /* Opera 11.1+ */
+    background: -moz-linear-gradient(#000, #737373); /* Firefox 3.6+ */
+    background: linear-gradient(#000, #737373); /* Standard syntax (must be last) */
+    background-color: #000; /* It's a good idea to set a background color in case the gradient doesn't load */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2; 
 }
 
 /*--------------------------body background--------------------------*/
@@ -55,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 .logo, .icon-menu {
-    margin: 5px;
+   margin: 5px;
 	color: #fff;
 }
 
@@ -109,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #6D0A6F;
     text-decoration: none;
     color: #ffff;
+    text-align: center;
     /*es el color de las letras del menu*/
 }
 
@@ -116,6 +136,14 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     color: #6D0A6F;
     /*es para que al momento de pasar el mouse sobre el menu se vea color blanco*/
+}
+
+# menu ul {
+    list-style: none;
+}
+
+#sub_ind{
+    background-color: black;
 }
 
 .mostrar {
@@ -126,6 +154,10 @@ h1, h2, h3, h4, h5, h6 {
 .contenedor_menu {
 	margin: auto;
 	width: 80%;
+}
+
+#list {
+    list-style: none;
 }
 
 
@@ -141,11 +173,12 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .banner_video {
     background-image:url('../img/pup2.jpg');
-    height: 485px;
+    height: 500px;
     width: 100%;
 	position: relative;
 	z-index: -1000;
@@ -156,7 +189,9 @@ h1, h2, h3, h4, h5, h6 {
 -webkit-box-align: center;
 -webkit-box-pack: center;
 -webkit-box-orient: horizontal;
--webkit-box-flex: 1
+-webkit-box-flex: 1;
+    color: antiquewhite;
+    background-attachment: fixed;
    
 }
 
@@ -186,7 +221,12 @@ h1, h2, h3, h4, h5, h6 {
 .abstract {
     height: 1500px;
     width: 100%;
-    align-content:center;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-items:center;
+    justify-content: center;
+    padding-top: 130px;
+    box-sizing: border-box;
 }
 
 
@@ -194,21 +234,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 100px;
 		margin: 10px;
     text-align: center;
+    color: antiquewhite;
 }
 
 .display{
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-top: 170px;
+    color: white;
 }
 
-.next-to-next{
+/*.next-to-next{
     float: left;
     min-height: 450px;
     align-items: center;
 	margin: auto;
     color: white;
-}
+}*/
 
 #abstract_img {
     width: 590px;
@@ -235,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contenedor_video{
+padding-top: 130px;
  display: -webkit-box;
 -webkit-box-align: center;
 -webkit-box-pack: center;
@@ -244,14 +288,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------PARALLAX PRUEBA CON CSS (Aun no funcional) -------------------------------------*/
 
-.parallax_prueba{
-    background: url('img/brain.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-    
-
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
+
 /*------------------------------Estilos de footer------------------------------*/
 
 
@@ -262,7 +303,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;	
 }
 	
-
 
 /*-----------------------------Estilos Responsive-----------------------------*/
 	
